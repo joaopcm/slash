@@ -9,7 +9,7 @@ services:
       - slash:/var/opt/slash
     environment:
       - SLASH_DRIVER=postgres
-      - SLASH_DSN=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-slash}?sslmode=disable
+      - SLASH_DSN=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD}@sksgo8g08848ws84wck4o044:5432/${POSTGRES_DB:-slash}?sslmode=disable
     depends_on:
       - postgres
     restart: unless-stopped
