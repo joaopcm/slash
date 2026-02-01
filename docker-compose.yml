@@ -10,8 +10,6 @@ services:
     environment:
       - SLASH_DRIVER=postgres
       - SLASH_DSN=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD}@dsgo8go04s4k80k0wkocwswc:5432/${POSTGRES_DB:-slash}?sslmode=disable
-    depends_on:
-      - postgres
     restart: unless-stopped
 
 volumes:
